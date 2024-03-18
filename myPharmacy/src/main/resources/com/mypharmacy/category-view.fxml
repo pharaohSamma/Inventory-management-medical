@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="623.0" prefWidth="951.0" style="-fx-background-color: #B2FFD8;" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mypharmacy.controllers.CategoryController">
+
+
+    <TableView fx:id="categoryTableView" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="categoryIdColumn" prefWidth="60" text="ID" />
+            <TableColumn fx:id="categoryNameColumn" prefWidth="180" text="Nom Categorie" />
+            <TableColumn fx:id="categoryDescriptionColumn" prefWidth="380" text="Description Categorie" />
+            <TableColumn fx:id="categoryEditColumn" prefWidth="90" text="Modifier" />
+            <TableColumn fx:id="categoryDeleteColumn" prefWidth="90" text="Suprimmer" />
+        </columns>
+    </TableView>
+
+    <Label text="Nom Categorie:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <TextField fx:id="categoryName" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+    <Label text="Description Categorie:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="categoryDescription" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <Button onAction="#addButtonClicked" styleClass="addButton" text="Ajouter" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="4" />
+
+</GridPane>

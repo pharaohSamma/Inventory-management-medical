@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.mypharmacy.ApplicationController" prefHeight="650" prefWidth="300" style="-fx-background-color: #B2FFD8;">
+    <Button text="Home" onAction="#goToHomePage" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="Category Table" onAction="#goToCategoryTable" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Button text="Another Page" onAction="#goToAnotherPage" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+</GridPane>
